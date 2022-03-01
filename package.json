@@ -1,0 +1,12 @@
+{
+  "name": "FORGE_PROFILE_FOLDER",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "kbv.basis": "1.2.1",
+    "de.basisprofil.r4": "0.9.13"
+  },
+  "fhirVersions": [
+    "4.0.0"
+  ]
+}

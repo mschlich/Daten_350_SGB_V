@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
+  <name value="GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Account" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Account" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Account.meta">
+      <path value="Account.meta" />
+    </element>
+    <element id="Account.meta.id">
+      <path value="Account.meta.id" />
+      <max value="0" />
+    </element>
+    <element id="Account.meta.versionId">
+      <path value="Account.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Account.meta.lastUpdated">
+      <path value="Account.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Account.meta.source">
+      <path value="Account.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Account.meta.profile">
+      <path value="Account.meta.profile" />
+      <fixedCanonical value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
+    </element>
+    <element id="Account.meta.security">
+      <path value="Account.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Account.implicitRules">
+      <path value="Account.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Account.language">
+      <path value="Account.language" />
+      <max value="0" />
+    </element>
+    <element id="Account.text">
+      <path value="Account.text" />
+      <max value="0" />
+    </element>
+    <element id="Account.contained">
+      <path value="Account.contained" />
+      <max value="0" />
+    </element>
+    <element id="Account.identifier">
+      <path value="Account.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Account.status">
+      <path value="Account.status" />
+      <fixedCode value="active" />
+    </element>
+    <element id="Account.type">
+      <path value="Account.type" />
+      <max value="0" />
+    </element>
+    <element id="Account.subject">
+      <path value="Account.subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
+      </type>
+    </element>
+    <element id="Account.servicePeriod">
+      <path value="Account.servicePeriod" />
+      <min value="1" />
+    </element>
+    <element id="Account.coverage">
+      <path value="Account.coverage" />
+      <max value="0" />
+    </element>
+    <element id="Account.owner">
+      <path value="Account.owner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
+      </type>
+    </element>
+    <element id="Account.description">
+      <path value="Account.description" />
+      <max value="0" />
+    </element>
+    <element id="Account.guarantor">
+      <path value="Account.guarantor" />
+      <max value="0" />
+    </element>
+    <element id="Account.partOf">
+      <path value="Account.partOf" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

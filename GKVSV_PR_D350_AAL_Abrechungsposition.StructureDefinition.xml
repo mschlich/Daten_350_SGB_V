@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungsposition" />
+  <name value="GKVSV_PR_D350_AAL_Abrechnungsposition" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ChargeItem" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/chargeitem-de-ebm" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ChargeItem.meta">
+      <path value="ChargeItem.meta" />
+    </element>
+    <element id="ChargeItem.meta.versionId">
+      <path value="ChargeItem.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.meta.lastUpdated">
+      <path value="ChargeItem.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.meta.source">
+      <path value="ChargeItem.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.meta.profile">
+      <path value="ChargeItem.meta.profile" />
+      <type>
+        <code value="canonical" />
+        <aggregation value="referenced" />
+      </type>
+      <fixedCanonical value="GKVSV_PR_D350_AAL_Abrechnungsposition" />
+    </element>
+    <element id="ChargeItem.meta.security">
+      <path value="ChargeItem.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.meta.tag">
+      <path value="ChargeItem.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.implicitRules">
+      <path value="ChargeItem.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.language">
+      <path value="ChargeItem.language" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.contained">
+      <path value="ChargeItem.contained" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.identifier">
+      <path value="ChargeItem.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.definitionUri">
+      <path value="ChargeItem.definitionUri" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.definitionCanonical">
+      <path value="ChargeItem.definitionCanonical" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.status">
+      <path value="ChargeItem.status" />
+      <label value="billed" />
+    </element>
+    <element id="ChargeItem.partOf">
+      <path value="ChargeItem.partOf" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.subject">
+      <path value="ChargeItem.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
+      </type>
+    </element>
+    <element id="ChargeItem.context">
+      <path value="ChargeItem.context" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.occurrence[x]">
+      <path value="ChargeItem.occurrence[x]" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.performer">
+      <path value="ChargeItem.performer" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ChargeItem.performer.function">
+      <path value="ChargeItem.performer.function" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.performer.actor">
+      <path value="ChargeItem.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_D350_AAL_Arzt" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ChargeItem.performingOrganization">
+      <path value="ChargeItem.performingOrganization" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Arztpraxis" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ChargeItem.requestingOrganization">
+      <path value="ChargeItem.requestingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.costCenter">
+      <path value="ChargeItem.costCenter" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.quantity.value">
+      <path value="ChargeItem.quantity.value" />
+      <fixedDecimal value="1" />
+    </element>
+    <element id="ChargeItem.bodysite">
+      <path value="ChargeItem.bodysite" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.factorOverride">
+      <path value="ChargeItem.factorOverride" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.priceOverride">
+      <path value="ChargeItem.priceOverride" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.overrideReason">
+      <path value="ChargeItem.overrideReason" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.enterer">
+      <path value="ChargeItem.enterer" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.enteredDate">
+      <path value="ChargeItem.enteredDate" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.reason.coding">
+      <path value="ChargeItem.reason.coding" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
+      </type>
+    </element>
+    <element id="ChargeItem.service">
+      <path value="ChargeItem.service" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.product[x]">
+      <path value="ChargeItem.product[x]" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.account">
+      <path value="ChargeItem.account" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account" />
+        <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
+      </type>
+    </element>
+    <element id="ChargeItem.note">
+      <path value="ChargeItem.note" />
+      <max value="0" />
+    </element>
+    <element id="ChargeItem.supportingInformation">
+      <path value="ChargeItem.supportingInformation" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
