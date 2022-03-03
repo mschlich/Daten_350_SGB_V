@@ -73,6 +73,11 @@
       <path value="Patient.active" />
       <max value="0" />
     </element>
+    <element id="Patient.name:geburtsname">
+      <path value="Patient.name" />
+      <sliceName value="geburtsname" />
+      <max value="0" />
+    </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
       <max value="0" />

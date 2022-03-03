@@ -66,8 +66,6 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
       </type>
     </element>
@@ -88,7 +86,6 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
       </type>
     </element>

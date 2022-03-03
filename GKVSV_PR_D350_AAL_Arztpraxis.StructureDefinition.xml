@@ -102,6 +102,14 @@
       <path value="Organization.alias" />
       <max value="0" />
     </element>
+    <element id="Organization.address:Strassenanschrift">
+      <path value="Organization.address" />
+      <sliceName value="Strassenanschrift" />
+    </element>
+    <element id="Organization.address:Strassenanschrift.period">
+      <path value="Organization.address.period" />
+      <max value="0" />
+    </element>
     <element id="Organization.address:Postfach">
       <path value="Organization.address" />
       <sliceName value="Postfach" />

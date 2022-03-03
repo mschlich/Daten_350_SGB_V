@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9eb03412-7829-48a9-a58e-0823c167fad3" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2022-03-03T16:01:46.211+00:00" />
+  </meta>
   <url value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_Composition" />
   <name value="GKVSV_PR_D350_Composition" />
   <status value="draft" />
+  <date value="2022-03-03T16:01:44.8909804+00:00" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -145,7 +151,6 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_Abrechnung" />
       </type>
     </element>
