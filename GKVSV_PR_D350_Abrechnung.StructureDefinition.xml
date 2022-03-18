@@ -13,53 +13,17 @@
     <element id="Invoice.meta">
       <path value="Invoice.meta" />
     </element>
-    <element id="Invoice.meta.versionId">
-      <path value="Invoice.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.meta.lastUpdated">
-      <path value="Invoice.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.meta.source">
-      <path value="Invoice.meta.source" />
-      <max value="0" />
-    </element>
     <element id="Invoice.meta.profile">
       <path value="Invoice.meta.profile" />
+      <min value="1" />
+      <max value="1" />
       <fixedCanonical value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_Abrechnung" />
-    </element>
-    <element id="Invoice.meta.security">
-      <path value="Invoice.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.meta.tag">
-      <path value="Invoice.meta.tag" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.implicitRules">
-      <path value="Invoice.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.contained">
-      <path value="Invoice.contained" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.identifier">
-      <path value="Invoice.identifier" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Invoice.status">
       <path value="Invoice.status" />
       <fixedCode value="issued" />
-    </element>
-    <element id="Invoice.cancelledReason">
-      <path value="Invoice.cancelledReason" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.type">
-      <path value="Invoice.type" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Invoice.subject">
       <path value="Invoice.subject" />
@@ -69,17 +33,9 @@
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
       </type>
     </element>
-    <element id="Invoice.recipient">
-      <path value="Invoice.recipient" />
-      <max value="0" />
-    </element>
     <element id="Invoice.date">
       <path value="Invoice.date" />
-      <min value="1" />
-    </element>
-    <element id="Invoice.participant">
-      <path value="Invoice.participant" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Invoice.issuer">
       <path value="Invoice.issuer" />
@@ -88,14 +44,12 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
       </type>
-    </element>
-    <element id="Invoice.account">
-      <path value="Invoice.account" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Invoice.lineItem">
       <path value="Invoice.lineItem" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Invoice.lineItem.sequence">
       <path value="Invoice.lineItem.sequence" />
@@ -111,24 +65,12 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Invoice.totalPriceComponent">
-      <path value="Invoice.totalPriceComponent" />
-      <max value="0" />
-    </element>
     <element id="Invoice.totalNet">
       <path value="Invoice.totalNet" />
       <max value="0" />
     </element>
     <element id="Invoice.totalGross">
       <path value="Invoice.totalGross" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.paymentTerms">
-      <path value="Invoice.paymentTerms" />
-      <max value="0" />
-    </element>
-    <element id="Invoice.note">
-      <path value="Invoice.note" />
       <max value="0" />
     </element>
   </differential>

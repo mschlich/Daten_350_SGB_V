@@ -13,41 +13,11 @@
     <element id="Organization.meta">
       <path value="Organization.meta" />
     </element>
-    <element id="Organization.meta.versionId">
-      <path value="Organization.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.lastUpdated">
-      <path value="Organization.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.source">
-      <path value="Organization.meta.source" />
-      <max value="0" />
-    </element>
     <element id="Organization.meta.profile">
       <path value="Organization.meta.profile" />
+      <max value="1" />
       <fixedCanonical value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
-    </element>
-    <element id="Organization.meta.security">
-      <path value="Organization.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.tag">
-      <path value="Organization.meta.tag" />
-      <max value="0" />
-    </element>
-    <element id="Organization.implicitRules">
-      <path value="Organization.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="Organization.language">
-      <path value="Organization.language" />
-      <max value="0" />
-    </element>
-    <element id="Organization.contained">
-      <path value="Organization.contained" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
@@ -83,6 +53,7 @@
         <ordered value="true" />
         <rules value="closed" />
       </slicing>
+      <short value="Gesetzliche Krankenkasse" />
       <min value="2" />
       <max value="2" />
       <mustSupport value="true" />
@@ -160,14 +131,6 @@
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
-      <max value="0" />
-    </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-      <max value="0" />
-    </element>
-    <element id="Organization.endpoint">
-      <path value="Organization.endpoint" />
       <max value="0" />
     </element>
   </differential>

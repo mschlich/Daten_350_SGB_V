@@ -13,94 +13,41 @@
     <element id="Account.meta">
       <path value="Account.meta" />
     </element>
-    <element id="Account.meta.id">
-      <path value="Account.meta.id" />
-      <max value="0" />
-    </element>
-    <element id="Account.meta.versionId">
-      <path value="Account.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="Account.meta.lastUpdated">
-      <path value="Account.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="Account.meta.source">
-      <path value="Account.meta.source" />
-      <max value="0" />
-    </element>
     <element id="Account.meta.profile">
       <path value="Account.meta.profile" />
+      <min value="1" />
+      <max value="1" />
       <fixedCanonical value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
-    </element>
-    <element id="Account.meta.security">
-      <path value="Account.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="Account.implicitRules">
-      <path value="Account.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="Account.language">
-      <path value="Account.language" />
-      <max value="0" />
-    </element>
-    <element id="Account.text">
-      <path value="Account.text" />
-      <max value="0" />
-    </element>
-    <element id="Account.contained">
-      <path value="Account.contained" />
-      <max value="0" />
-    </element>
-    <element id="Account.identifier">
-      <path value="Account.identifier" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Account.status">
       <path value="Account.status" />
+      <definition value="Wenn der Abrechungszeitraum angegeben ist, dann muss status &quot;active&quot; sein." />
       <fixedCode value="active" />
-    </element>
-    <element id="Account.type">
-      <path value="Account.type" />
-      <max value="0" />
     </element>
     <element id="Account.subject">
       <path value="Account.subject" />
+      <short value="Versicherter" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Account.servicePeriod">
       <path value="Account.servicePeriod" />
+      <short value="Abrechnuungszeitraum" />
       <min value="1" />
-    </element>
-    <element id="Account.coverage">
-      <path value="Account.coverage" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Account.owner">
       <path value="Account.owner" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
       </type>
-    </element>
-    <element id="Account.description">
-      <path value="Account.description" />
-      <max value="0" />
-    </element>
-    <element id="Account.guarantor">
-      <path value="Account.guarantor" />
-      <max value="0" />
-    </element>
-    <element id="Account.partOf">
-      <path value="Account.partOf" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

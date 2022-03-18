@@ -13,53 +13,16 @@
     <element id="ChargeItem.meta">
       <path value="ChargeItem.meta" />
     </element>
-    <element id="ChargeItem.meta.versionId">
-      <path value="ChargeItem.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.meta.lastUpdated">
-      <path value="ChargeItem.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.meta.source">
-      <path value="ChargeItem.meta.source" />
-      <max value="0" />
-    </element>
     <element id="ChargeItem.meta.profile">
       <path value="ChargeItem.meta.profile" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="canonical" />
         <aggregation value="referenced" />
       </type>
       <fixedCanonical value="GKVSV_PR_D350_AAL_Abrechnungsposition" />
-    </element>
-    <element id="ChargeItem.meta.security">
-      <path value="ChargeItem.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.meta.tag">
-      <path value="ChargeItem.meta.tag" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.implicitRules">
-      <path value="ChargeItem.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.language">
-      <path value="ChargeItem.language" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.contained">
-      <path value="ChargeItem.contained" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.identifier">
-      <path value="ChargeItem.identifier" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.definitionUri">
-      <path value="ChargeItem.definitionUri" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.definitionCanonical">
       <path value="ChargeItem.definitionCanonical" />
@@ -68,10 +31,11 @@
     <element id="ChargeItem.status">
       <path value="ChargeItem.status" />
       <label value="billed" />
+      <mustSupport value="true" />
     </element>
-    <element id="ChargeItem.partOf">
-      <path value="ChargeItem.partOf" />
-      <max value="0" />
+    <element id="ChargeItem.code">
+      <path value="ChargeItem.code" />
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.subject">
       <path value="ChargeItem.subject" />
@@ -79,19 +43,22 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
       </type>
-    </element>
-    <element id="ChargeItem.context">
-      <path value="ChargeItem.context" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.occurrence[x]">
       <path value="ChargeItem.occurrence[x]" />
       <min value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="occurenceDateTime" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.performer">
       <path value="ChargeItem.performer" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.performer.function">
       <path value="ChargeItem.performer.function" />
@@ -121,41 +88,15 @@
         <aggregation value="referenced" />
       </type>
     </element>
-    <element id="ChargeItem.requestingOrganization">
-      <path value="ChargeItem.requestingOrganization" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.costCenter">
-      <path value="ChargeItem.costCenter" />
-      <max value="0" />
-    </element>
     <element id="ChargeItem.quantity.value">
       <path value="ChargeItem.quantity.value" />
       <fixedDecimal value="1" />
     </element>
-    <element id="ChargeItem.bodysite">
-      <path value="ChargeItem.bodysite" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.factorOverride">
-      <path value="ChargeItem.factorOverride" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.priceOverride">
-      <path value="ChargeItem.priceOverride" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.overrideReason">
-      <path value="ChargeItem.overrideReason" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.enterer">
-      <path value="ChargeItem.enterer" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.enteredDate">
-      <path value="ChargeItem.enteredDate" />
-      <max value="0" />
+    <element id="ChargeItem.reason">
+      <path value="ChargeItem.reason" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="ChargeItem.reason.coding">
       <path value="ChargeItem.reason.coding" />
@@ -166,14 +107,6 @@
         <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
       </type>
     </element>
-    <element id="ChargeItem.service">
-      <path value="ChargeItem.service" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.product[x]">
-      <path value="ChargeItem.product[x]" />
-      <max value="0" />
-    </element>
     <element id="ChargeItem.account">
       <path value="ChargeItem.account" />
       <max value="1" />
@@ -181,14 +114,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Abrechnungszeitraum" />
       </type>
-    </element>
-    <element id="ChargeItem.note">
-      <path value="ChargeItem.note" />
-      <max value="0" />
-    </element>
-    <element id="ChargeItem.supportingInformation">
-      <path value="ChargeItem.supportingInformation" />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

@@ -13,62 +13,16 @@
     <element id="Organization.meta">
       <path value="Organization.meta" />
     </element>
-    <element id="Organization.meta.versionId">
-      <path value="Organization.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.lastUpdated">
-      <path value="Organization.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.source">
-      <path value="Organization.meta.source" />
-      <max value="0" />
-    </element>
     <element id="Organization.meta.profile">
       <path value="Organization.meta.profile" />
+      <min value="1" />
+      <max value="1" />
       <fixedCanonical value="http://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_AAL_Arztpraxis" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.meta.security">
-      <path value="Organization.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="Organization.meta.tag">
-      <path value="Organization.meta.tag" />
-      <max value="0" />
-    </element>
-    <element id="Organization.implicitRules">
-      <path value="Organization.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="Organization.language">
-      <path value="Organization.language" />
-      <max value="0" />
-    </element>
-    <element id="Organization.text">
-      <path value="Organization.text" />
-      <max value="0" />
-    </element>
-    <element id="Organization.contained">
-      <path value="Organization.contained" />
-      <max value="0" />
-    </element>
-    <element id="Organization.extension">
-      <path value="Organization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Organization.extension:ergaenzende_Angaben">
-      <path value="Organization.extension" />
-      <sliceName value="ergaenzende_Angaben" />
-      <min value="0" />
-      <max value="0" />
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:Institutionskennzeichen">
       <path value="Organization.identifier" />
@@ -79,6 +33,9 @@
       <path value="Organization.identifier" />
       <sliceName value="Betriebsstaettennummer" />
       <short value="Nummer der Hauptbestrierbsstätte" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:VKNR">
       <path value="Organization.identifier" />
@@ -90,17 +47,17 @@
       <sliceName value="KZV-Abrechnungsnummer" />
       <max value="0" />
     </element>
-    <element id="Organization.active">
-      <path value="Organization.active" />
-      <max value="0" />
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <max value="0" />
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <max value="0" />
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.address:Strassenanschrift">
       <path value="Organization.address" />
@@ -113,18 +70,6 @@
     <element id="Organization.address:Postfach">
       <path value="Organization.address" />
       <sliceName value="Postfach" />
-      <max value="0" />
-    </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <max value="0" />
-    </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-      <max value="0" />
-    </element>
-    <element id="Organization.endpoint">
-      <path value="Organization.endpoint" />
       <max value="0" />
     </element>
   </differential>
