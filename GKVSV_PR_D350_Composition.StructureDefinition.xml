@@ -24,10 +24,6 @@
       <fixedCanonical value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_Composition" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.contained">
-      <path value="Composition.contained" />
-      <max value="0" />
-    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <fixedCode value="final" />

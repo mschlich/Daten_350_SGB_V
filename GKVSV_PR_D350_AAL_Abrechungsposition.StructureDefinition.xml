@@ -24,10 +24,6 @@
       <fixedCanonical value="GKVSV_PR_D350_AAL_Abrechnungsposition" />
       <mustSupport value="true" />
     </element>
-    <element id="ChargeItem.definitionCanonical">
-      <path value="ChargeItem.definitionCanonical" />
-      <max value="0" />
-    </element>
     <element id="ChargeItem.status">
       <path value="ChargeItem.status" />
       <label value="billed" />

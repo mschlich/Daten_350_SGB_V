@@ -20,10 +20,6 @@
       <fixedCanonical value="http://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_VersicherterGKV" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.contained">
-      <path value="Patient.contained" />
-      <max value="0" />
-    </element>
     <element id="Patient.identifier:versichertenId_GKV">
       <path value="Patient.identifier" />
       <sliceName value="versichertenId_GKV" />

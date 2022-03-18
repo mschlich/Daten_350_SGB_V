@@ -48,6 +48,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.gkvsv.de/StructureDefinition/GKVSV_PR_D350_GesetzlKrankenkasse" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

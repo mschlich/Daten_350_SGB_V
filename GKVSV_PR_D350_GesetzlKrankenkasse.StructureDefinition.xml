@@ -129,9 +129,5 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>

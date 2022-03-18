@@ -20,6 +20,10 @@
       <fixedCanonical value="http://fhir.gkvsv.de/StructureDefinition/GKSVSV_PR_D350_AAL_Arzt" />
       <mustSupport value="true" />
     </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="Practitioner.identifier:ANR">
       <path value="Practitioner.identifier" />
       <sliceName value="ANR" />
