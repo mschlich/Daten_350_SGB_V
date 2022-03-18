@@ -48,10 +48,6 @@
     <element id="ChargeItem.occurrence[x]">
       <path value="ChargeItem.occurrence[x]" />
       <min value="1" />
-      <type>
-        <code value="dateTime" />
-        <profile value="occurenceDateTime" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="ChargeItem.performer">
